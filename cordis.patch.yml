@@ -1,0 +1,6 @@
+# Register our plugin row into the composed profile config.
+# `id` is the stable row identifier; `name` resolves the module through the
+# installed package (package.json#main → lib/index.js).
+- insert:
+    - id: dsh-plugin-coreldraw
+      name: dsh-plugin-coreldraw

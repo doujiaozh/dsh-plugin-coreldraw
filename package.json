@@ -1,0 +1,67 @@
+{
+  "name": "dsh-plugin-coreldraw",
+  "version": "0.1.0",
+  "description": "Drive a running CorelDRAW (X4 and later) from DSH through VBScript late-binding — never launches or modifies the application.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "coreldraw",
+    "com",
+    "vbscript"
+  ],
+  "license": "MIT",
+  "author": "dsh-plugin-coreldraw contributors",
+  "icon": "./icon.svg",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
+    "./scripts/*": "./scripts/*",
+    "./examples/*": "./examples/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "examples",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"tests/*.test.mjs\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.4",
+    "@deepseek-ai/dsh-tools": "^0.2.1-rc.1",
+    "@deepseek-ai/schemastery": "^3.18.5",
+    "@types/node": "^22.20.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.4",
+    "@deepseek-ai/dsh-tools": "^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.2.1-rc.1",
+    "@deepseek-ai/schemastery": "^3.18.5"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": "^0.1.7-rc.1 || ^0.2.0-rc.1 || ^0.2.1-rc.1"
+  },
+  "packageManager": "pnpm@11.7.0",
+  "sideEffects": false,
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
