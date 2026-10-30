@@ -1,0 +1,25 @@
+{
+  "name": "@local/dsh-coreldraw-x4",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Drive the local CorelDRAW X4 from DSH: a JScript/COM bridge plus keyboard fallback for portable builds without automation registration.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "icon.svg",
+    "bridge/bridge.js"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

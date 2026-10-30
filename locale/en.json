@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "CorelDRAW X4 Control",
+    "description": "Drive the local CorelDRAW X4 through a JScript/COM bridge, with a keyboard fallback for portable builds without automation registration."
+  }
+}

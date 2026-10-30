@@ -1,0 +1,19 @@
+# Dependencies / package manager artifacts
+node_modules/
+.pnpm-store/
+pnpm-debug.log*
+npm-debug.log*
+yarn-error.log*
+
+# DSH plugin manager local state
+.plugin-manager/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Binary / temp files
+*.bin
+*.tmp
+*.bak
+*.log

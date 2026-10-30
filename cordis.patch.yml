@@ -1,0 +1,8 @@
+- insert:
+    - id: coreldraw-x4
+      name: '@local/dsh-coreldraw-x4'
+      inject:
+        - tools
+      config:
+        exePath: 'D:\Code\CorelDRAW X4\Programs\CorelDRW.exe'
+        bridgeTimeoutMs: 120000

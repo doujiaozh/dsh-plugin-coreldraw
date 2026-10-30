@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "CorelDRAW X4 控制",
+    "description": "通过 JScript/COM 桥接操控本地 CorelDRAW X4；绿色版未注册 COM 时可用键盘操控兜底。"
+  }
+}
